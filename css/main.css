@@ -1,0 +1,397 @@
+
+/* КОНТЕЙНЕР */
+
+.block {
+    text-align: center;
+  }
+  
+  .generation {
+    padding: 120px 0;
+    background-color: #f7f7f7;
+  }
+  
+  @media (max-width: 900px) {
+    .generation {
+      padding: 80px 0;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .generation {
+      padding: 30px 0;
+    }
+  }
+  
+  .block__icon {
+    margin: 0 0 30px 0;
+  }
+  
+  .block__title {
+    margin: 0px 0px 18px 0px;
+    color: #353738;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    line-height: 24px;
+  }
+  
+  .block__text {
+    color: #848789;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+  
+  /* БРЕНДЫ */
+  
+  .brands__row {
+    display: flex;
+  }
+  
+  @media (max-width: 1100px) {
+    .brands__last .brands__column:nth-child(1){
+      order: 2;
+    }
+  
+    .brands__last .brands__column:nth-child(1){
+      order: 1;
+    }
+  
+    .brands__last .brands__column:nth-child(3){
+      order: 3;
+    }
+  
+    .brands__row {
+      flex-direction: column;
+    }
+  }
+  
+  .brands__column {
+    flex: 0 1 33.333%;
+  }
+  
+  .brands__column_b {
+    flex: 0 1 66.667%;
+  }
+  
+  .block__text_j {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  .block__text_j:after {
+    content: "";
+    display: block;
+    margin: 35px auto 0px auto;
+    width: 50px;
+    height: 1px;
+    background-color: #ebebeb;
+  }
+  
+  @media (max-width: 1500px) {
+    .block__text_j:after {
+      margin: 15px auto 0px auto;
+    }
+  }
+  
+  .brands__content {
+    padding: 70px 65px 55px 65px;
+    position: relative;
+  }
+  
+  @media (max-width: 1500px) {
+    .brands__content {
+      padding: 40px 35px 30px 35px;
+    }
+  }
+  
+  .brands__content:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin: 0px 0px 0px -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+  }
+  
+  .item {
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+  
+  @media (max-width: 1100px) {
+    .item {
+      height: auto;
+      padding: 0px 0px 70% 0px;
+    }
+  }
+  
+  .item__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .brands__image {
+    padding: 0 0 37.51% 0;
+  }
+  
+  .item__logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgb(100, 194, 158, 0.5);
+    opacity: 0;
+  }
+  
+  .item__logo:hover {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* СЛАЙДЕР */
+
+  .slider {
+    background-color: #f7f7f7;
+    padding: 120px 0 60px 0;
+  }
+  
+  .slider__title {
+    margin: 30px 0px 20px 0px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    font-size: 18px;
+    color: #353738;
+  }
+  
+  .slider__title span {
+    font-weight: 300;
+    color: #848789;
+  }
+  
+  .slider__text {
+    text-align: center;
+    color: #848789;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  
+  .slick-slider {
+    position: relative;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .slick-dots {
+    padding: 50px 0px 0px 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .slick-dots li {
+    margin: 0px 5px;
+  }
+  
+  .slick-dots li button {
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid #c8c8c8;
+    background-color: transparent;
+  }
+  
+  .slick-dots .slick-active button {
+    background-color: #a9afb3;
+    outline: none;
+  }
+  
+  /* SHOP */
+  
+  .block-shop {
+    height: 100%;
+  }
+  
+  .block-shop__item {
+    height: auto;
+    padding: 0px 0px 50% 0px;
+  }
+  
+  .block-shop__item_l {
+    padding: 0px 0px 100% 0px;
+  }
+  
+  .shop__body {
+    display: flex;
+  }
+  
+  .shop__column {
+    flex: 0 1 16.666%;
+  }
+  
+  .shop__column_b {
+    flex: 0 1 33.333%;
+  }
+  
+  .block-shop__row {
+    display: flex;
+  }
+  
+  .block-shop__column {
+    flex: 0 1 50%;
+  }
+  
+  .block-shop__item_b {
+    padding: 0px 0px 200.5% 0px;
+  }
+  
+  @media (max-width: 1100px) {
+    .shop__body {
+      flex-wrap: wrap;
+    }
+    .shop__column {
+      flex: 0 1 50%;
+    }
+  
+    .shop__column:first-child {
+      flex: 1 1 100%;
+    }
+    .shop__column:last-child {
+      flex: 1 1 100%;
+    }
+  }
+  
+  .shop__logo {
+    margin: 10px 0px 0px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .shop__footer {
+    padding: 75px 0;
+    background-color: #282f35;
+    text-align: center;
+  }
+  
+  .shop__btn {
+    padding: 30px 50px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+  }
+  
+  @media (max-width: 600px) {
+    .shop__btn {
+      padding: 15px 25px;
+    }
+  
+    .shop__footer {
+      padding: 50px 0;
+    }
+  }
+
+  /*EMAIL*/
+  
+  .subscribe__body {
+    max-width: 534px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 110px 0;
+  }
+  
+  .subscribe__logo {
+    margin: 0px 0px 40px 0px;
+  }
+  
+  .subscribe__label {
+    margin-bottom: 35px;
+    color: #848789;
+    font-size: 24px;
+    line-height: 34px;
+    font-style: italic;
+  }
+  
+  .subscribe__form {
+    display: flex;
+  }
+  
+  .subscribe__input {
+    flex: 1 1 auto;
+    margin-right: 8px;
+  }
+  
+  .input {
+    width: 100%;
+    height: 69px;
+    padding: 28px;
+    border: 1px solid #d3d7d9;
+    background-color: #ffffff;
+    outline: none;
+    color: #929292;
+    font-style: italic;
+  }
+  
+  .subscribe__button {
+    flex: 0 0 126px;
+  }
+  
+  .subscribe__btn {
+    width: 100%;
+    height: 69px;
+    border: 0;
+    background-color: #64c29e;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ffffff;
+    outline: none;
+  }
+  
+  @media (max-width: 750px) {
+    .subscribe__body {
+      padding: 50px 0px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .subscribe__form {
+      display: block;
+    }
+    .subscribe__input {
+      margin-bottom: 10px;
+    }
+  }
